@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dandy Buzzkills</title>
+    <title>Blog | Dandy Buzzkills</title>
     <link rel="stylesheet" href="styles/master.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 </head>
+
 <body>
-    <div class="parallax" id="parallax"></div>
     <div class="container">
         <div class="navbar" id="navbar">
             <div class="logo"><a href="index.html"><img src="images/buzzkills.svg"></a></div>
@@ -25,30 +26,18 @@
                 </ul>
             </nav>
         </div>
-     
-        <!-- Maxwell -->
-        <div class="splash">
-            <h1>I CAN FEED THE FISH EARTHWORMS</h1>
-            <p>the debut ep - out now</p>
-            <img src="images/icftfew.jpg">
-            <h2>"I Wanna..." music video - out now</h2>
-            <div class="video-container">
-                <iframe width="900" height="500" src="https://www.youtube.com/embed/nfWlot6h_JM?si=wa2cFhhxTjRpjv3L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </iframe>
+        <div class="message-board">
+            <form id="messageForm">
+                <input type="text" id="title" placeholder="Title" required>
+                <textarea id="messageContent" placeholder="Write your message" required></textarea>
+                <button type="submit">Post Message</button>
+            </form>
+            <div id="messagesContainer">
+                <!-- Messages will appear here -->
             </div>
-            <div class="mailing-list-box">
-                <h3>There is no mailing list!</h3>
-                <p>But if you enter your email below, we will make sure that it is sold to data farms and scam call centres worldwide!</p>
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter your email" required>
-                    <button class="submit" onclick="donateClick()">Donate</button>
-                </form>
-            </div>
-            
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="page-footer">
         <div class="footer-content">
             <p>© Dandy Buzzkills. Site by Jack Larkin.</p>
@@ -62,7 +51,9 @@
             </div>
         </div>
     </footer>
-    
-    <script src="scripts/scripts.js"></script>
+
+    <!-- JavaScript file linked -->
+    <script src="scripts/blog.js"></script>
 </body>
+
 </html>
